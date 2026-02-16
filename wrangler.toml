@@ -1,0 +1,19 @@
+name = "hello-world"
+main = "src/index.ts"
+compatibility_date = "2025-01-01"
+compatibility_flags = ["nodejs_compat"]
+
+[[d1_databases]]
+binding = "DB"
+database_name = "fileverse-db"
+database_id = "89d09eea-a464-4edd-b218-0fbe266a5e43"
+migrations_dir = "migrations"
+
+[triggers]
+crons = ["*/2 * * * *", "*/1 * * * *"]
+
+[vars]
+NODE_ENV = "production"
+
+[observability]
+enabled = true
